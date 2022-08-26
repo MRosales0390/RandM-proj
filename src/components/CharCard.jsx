@@ -8,12 +8,12 @@ export default function CharCard(props) {
         .then(response => response.json())
         .then(data => {
             setChar(data)
-            console.log("CardData: ", data);
+            //console.log("CardData: ", data);
         })
     }, [props.url]);
 
     return(
-        <article className="char-card">
+        <article className="char-card" onClick={props.onClick}>
             <header>
                 <img 
                     src={char?.image} 

@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: greenyellow;
+  background-color: rgba(191,222,66,255);
 }
 
 code {
@@ -35,13 +35,15 @@ code {
 	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
-	border-radius: 15px;
 	padding: 0 0 2rem 0;
+	border: 2px solid black;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .char-card img {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	/*border-bottom-left-radius: 10px;*/
+	border-top-right-radius: 7px;
 	background-position: center;
 	overflow: hidden;
 }
@@ -50,4 +52,34 @@ code {
 	color: whitesmoke;
 	font-weight: bold;
 	font-size: 1rem;
+}
+
+.char-modal {
+	background-color: rgba(66, 180, 202, 0.75);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.char-modal main {
+	background-color: rgb(29, 31, 36);
+	border-radius: 15px;
+	color: whitesmoke;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	min-height: 50%;
+}
+
+.char-modal img {
+	border: 3px solid rgba(191,222,66,255);
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
 }
